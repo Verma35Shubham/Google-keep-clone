@@ -26,7 +26,7 @@ const NotesProvider = ({children}) => {
                 newList = [...action.payLoad];
             }else{
                 newList.push({
-                    id : noteId,
+                    id: noteId,
                     title: action.payLoad.title,
                     content: action.payLoad.content,
                     color: "#ffffff",

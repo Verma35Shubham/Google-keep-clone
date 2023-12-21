@@ -54,7 +54,7 @@ const NoteCard = ({currentInfo}) => {
                     currentInfo.edit ? <NotesContent rows={6} cols={36} className={"Card-edit-content"} value={edit.content} onChange={(e) => {setEdit({...edit, content: e.target.value})}}/>: <pre className="Card-content">{currentInfo.content}</pre>
                 }
                 <div className="Card-Button">
-                    currentInfo.edit? <Buttons className={"Card-save"} id={currentInfo.id} onClick={updateNote} text={<SaveIcon id={currentInfo.id} fontSize='small' sx={{color:"white"}}/>}/>:<Buttons className={"Card-edit"} onClick={editNote} id={currentInfo.id} text={<EditIcon id={currentInfo.id} fontSize='small' sx={{color:"white"}}/>}/>
+                    currentInfo.edit ? <Buttons className={"Card-save"} id={currentInfo.id} onClick={updateNote} text={<SaveIcon id={currentInfo.id} fontSize='small' sx={{color:"white"}}/>}/>:<Buttons className={"Card-edit"} onClick={editNote} id={currentInfo.id} text={<EditIcon id={currentInfo.id} fontSize='small' sx={{color:"white"}}/>}/>
                 </div>
                 <Buttons className={"Card-delete"} id={currentInfo.id} onClick={deleteNote} text={<DeleteIcon id={currentInfo.id} fontSize='small' sx={{color:"white"}}/>}/>
                 <div className="Card-color-block">
